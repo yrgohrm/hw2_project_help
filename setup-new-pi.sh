@@ -49,4 +49,5 @@ chmod +x ~/.local/bin/gh-init.sh
 
 
 # reboot in case upgrade did something interresting
+echo Rebooting now
 sudo reboot
