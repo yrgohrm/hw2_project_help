@@ -32,8 +32,8 @@ read -p "Enter your name: " GIT_AUTHOR_NAME
 read -p "Enter your e-mail: " GIT_AUTHOR_EMAIL
 read -p "Enter a valid GitHub token: " GITHUB_TOKEN
 
-export GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
-export GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+export GIT_COMMITTER_NAME="\$GIT_AUTHOR_NAME"
+export GIT_COMMITTER_EMAIL="\$GIT_AUTHOR_EMAIL"
 export GIT_AUTHOR_NAME
 export GIT_AUTHOR_EMAIL
 export GITHUB_TOKEN
