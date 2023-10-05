@@ -20,7 +20,7 @@ def on_message(client, userdata, msg):
     sensor_id = topics[4]
 
     try:
-        ts, itemp, apa = struct.unpack(">Ii", msg.payload)
+        ts, itemp = struct.unpack(">Ii", msg.payload)
 
         temp = itemp / 1000
         date = datetime.fromtimestamp(ts)
